@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
-/* Componentes*/
-
-import Calendar from '../componets/pages/calendar';
-import Folders from '../componets/pages/folders';
 import Home from '../componets/pages/home';
-import Mensagens from '../componets/pages/messagens'
+import Folders from '../componets/pages/folders';
+import Calendar from '../componets/pages/calendar';
+import Messagens from '../componets/pages/messagens';
 
 class Routes extends Component {
-    state = {  } 
+ 
     render() { 
         return (
-
+        <>
             <Router>
-                <Route path='/calendar' component={Calendar} />
-                <Route path='/home' component={Home} />
-                <Route path='/folders' component={Folders} />
-                <Route path='/mensagens' component={Mensagens} />
+
+                    <Route path="/home" Component={Home} />
+                    <Route path="/folders" Component={Folders} />
+                    <Route path="/calendar" Component={Calendar} />
+                    <Route path="/menssagens" Component={Messagens} />
+           
             </Router>
+        </>
         );
     }
 }

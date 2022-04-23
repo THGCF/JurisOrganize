@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sidebar from './componets/bars/sidebar';
 
 import './assets/styles/app.css'
+import './assets/styles/sidebar.css'
 
 
 class App extends Component {
@@ -10,7 +11,9 @@ class App extends Component {
     return (
       <div className='App'>
     
-      <Sidebar />
+      <div className='sidebar'>
+        <Sidebar />
+      </div>
       
       </div>
     );

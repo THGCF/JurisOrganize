@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import SideBarData from './sidebardata';
+import  {sideBarItens} from './sidebardata';
+import Routes from '../../routes';
+import { Link } from 'react-router-dom';
 
 import '../../assets/styles/sidebar.css'
 
-
-class Sidebar extends Component {
-
+class SideBar extends Component {
+     
     render() { 
         return (
-        <div className='sidebar'>
-           <SideBarData />
-        </div>
+            <div className='sidebar_itens'>
+                {sideBarItens.map(sideBarItem => (
+                    <Link to={sideBarItem.link}>
+                        <div className='sidebar_item'>
+                               
+                    <span className='sidebar_icon'> {sideBarItem.icon} </span>
+                    <span className='sidebar_tittle'> {sideBarItem.tittle} </span>
+                              
+                        </div>
+                    </Link>
+            ))}
+            </div>          
         );
     }
 }
  
-export default Sidebar;
+export default SideBar;
