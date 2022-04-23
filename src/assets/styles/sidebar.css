@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 10%;
+    color: lightslategrey;
+    background-color: darkgray;
+}
+
