@@ -1,41 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
 
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+   
     
 }
 
 .sidebar{
     font-family: 'Popins', sans-serif;
-    font-size: 12px;
+    
 
     height: 100%;
-    width: 12%;
-    color: darkgray;
+    width: 165px;
+    color: lightgrey;
     background-color:#0E192F;
-
-    
 }
+
 .sidebar_item{
     display: flex;
-    flex-direction: row;
     
+    width: auto;
+    height: 1%;
+    
+    border: 20px, solid, black;
 
-    width: 100%;
-    height: auto;
     
-    margin-bottom: 0%;
-    margin-top: 0%;
+    padding-top: 15%;
     padding-bottom: 30px;
-    padding-left: 30px;
+    padding-left: 30px; 
 
-    border: 100%, solid, red;
-    
-    color: lightgray;
+     
+   transition: .4s;
 }
-.sidebar_item:hover{
 
+.sidebar_item:hover{
+    background-color: #183863;
+    color: whitesmoke;
 }
 
 .sidebar_icon{
@@ -43,6 +44,6 @@ body{
     
 }
 .sideba_tittle{
-    justify-content: center;
+    
     
 }
