@@ -9,20 +9,29 @@ class SideBar extends Component {
      
     render() { 
         return (
-            <div className='sidebar_itens'>
-                {sideBarItens.map(sideBarItem => (
-                    <Link to={sideBarItem.link}>
-                        <div className='sidebar_item'>
-                               
-                    <span className='sidebar_icon'> {sideBarItem.icon} </span>
-                    <span className='sidebar_tittle'> {sideBarItem.tittle} </span>
-                              
-                        </div>
-                    </Link>
-            ))}
-            </div>          
-        );
+            <>      
+                {
+                sideBarItens.map(sideBarItem => (
+                   /*  <Link to={sideBarItem.link}> */
+                     <div className='sidebar_item'>
+                         <span className='sidebar_icon'>{sideBarItem.icon}</span>
+                         <span className='sidebar_tittle'>{sideBarItem.tittle}</span>
+                     </div>
+                     /* </Link> */
+                        ) 
+                    ) 
+                }
+            </>
+        ); 
+        
+            
+        };
+
+
     }
-}
+   
+         
+
  
 export default SideBar;
+

@@ -1,4 +1,4 @@
-import * as BoxIcons from 'react-icons/bi'
+import * as BoxIcons from 'react-icons/bi';
 
 export  const sideBarItens = [
             {
@@ -39,4 +39,4 @@ export  const sideBarItens = [
             },
         ]
 
-console.log(sideBarItens)
+
