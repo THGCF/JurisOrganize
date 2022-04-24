@@ -12,22 +12,18 @@ class SideBar extends Component {
             <>      
                 {
                 sideBarItens.map(sideBarItem => (
-                   /*  <Link to={sideBarItem.link}> */
-                     <div className='sidebar_item'>
+                    /* <Link to{sideBarItem.link}>*/
+                    <div className='sidebar_item'>
                          <span className='sidebar_icon'>{sideBarItem.icon}</span>
                          <span className='sidebar_tittle'>{sideBarItem.tittle}</span>
                      </div>
-                     /* </Link> */
+                     /*</Link>*/
                         ) 
                     ) 
                 }
             </>
-        ); 
-        
-            
+        );   
         };
-
-
     }
    
          
