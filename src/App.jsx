@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import Sidebar from './componets/bars/sidebar';
 
-import './assets/styles/app.css'
-import './assets/styles/sidebar.css'
+import './assets/styles/app.css';
+import './assets/styles/sidebar.css';
 
+import SideBarRoutes from './routes';
+
+import {BrowserRouter} from 'react-router-dom'
 
 class App extends Component {
   state = {  } 
   render() { 
     return (
-      <div className='App'>
+      <BrowserRouter>
+        <div className='App'>
     
-      <div className='sidebar'>
-        <Sidebar />
-      </div>
+          <div className='sidebar'>
       
-      </div>
+            <Sidebar />
+            <SideBarRoutes/>
+          </div>
+        
+        </div>
+      </BrowserRouter>
+      
     );
   }
 }
