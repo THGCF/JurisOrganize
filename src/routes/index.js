@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
-import Home from '../componets/pages/home';
-import Folders from '../componets/pages/folders';
-import Calendar from '../componets/pages/calendar';
-import Messagens from '../componets/pages/messagens';
+import Home from '../componets/pages/Home';
+import Folders from '../componets/pages/Folders';
+import Calendar from '../componets/pages/Calendar';
+import Messagens from '../componets/pages/Messagens';
+import Login from '../componets/pages/Login';
 
 class SideBarRoutes extends Component {
  
     render() { 
         return (
-        
-            
                 <Routes>
                     <Route path="/home" element={<Home/>} />
                     <Route path="/folders" element={<Folders/>} />
                     <Route path="/calendar" element={<Calendar/>} />
                     <Route path="/menssagens" element={<Messagens/>} />
-                </Routes>
-            
-        
+                    <Route path="/" element={<Login/>} />
+                </Routes>      
         );
     }
 }

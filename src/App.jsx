@@ -7,6 +7,7 @@ import './assets/styles/sidebar.css';
 import SideBarRoutes from './routes';
 
 import {BrowserRouter} from 'react-router-dom'
+import Login from './componets/pages/Login';
 
 class App extends Component {
   state = {  } 
@@ -16,11 +17,12 @@ class App extends Component {
         <div className='App'>
     
           <div className='sidebar'>
-      
             <Sidebar />
-            <SideBarRoutes/>
+              <SideBarRoutes/>
           </div>
-        
+        <div className='Pages'>
+            <Login/>
+        </div>
         </div>
       </BrowserRouter>
       

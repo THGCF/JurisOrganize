@@ -8,8 +8,7 @@ body{
 }
 
 .sidebar{
-    font-family: 'Popins', sans-serif;
-    
+    font-family: 'Popins', sans-serif;     
 
     height: 100%;
     width: 165px;
@@ -17,6 +16,9 @@ body{
     background-color:#0E192F;
 }
 
+.sidebar span{
+    text-decoration: none;
+}
 .sidebar_item{
     display: flex;
     
